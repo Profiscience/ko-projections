@@ -1,5 +1,11 @@
 # ko-projections
 
+![NPM](https://img.shields.io/npm/v/ko-component-router.svg)
+![WTFPL](https://img.shields.io/npm/l/ko-component-router.svg)
+[![Travis](https://img.shields.io/travis/profiscience/ko-component-router.svg)](https://travis-ci.org/profiscience/ko-component-router)
+[![CodeClimate](https://img.shields.io/codeclimate/github/profiscience/ko-component-router.svg)](https://codeclimate.com/github/profiscience/ko-component-router)
+[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/profiscience/ko-component-router.svg)](https://codeclimate.com/github/profiscience/ko-component-router/coverage)
+
 #### Usage
 
 ```javascript
