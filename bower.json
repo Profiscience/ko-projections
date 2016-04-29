@@ -1,0 +1,24 @@
+{
+  "name": "ko-projections",
+  "description": "Observable Lodash Chains for KnockoutJS",
+  "main": "index.js",
+  "authors": [
+    "Casey Webb <notcaseywebb@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "knockout",
+    "lodash",
+    "ko",
+    "projection",
+    "underscore"
+  ],
+  "homepage": "https://github.com/profiscience/ko-projections",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
