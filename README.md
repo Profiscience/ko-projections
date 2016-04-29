@@ -4,7 +4,7 @@
 ![WTFPL](https://img.shields.io/npm/l/ko-projections.svg)
 [![Travis](https://img.shields.io/travis/Profiscience/ko-projections.svg)](https://travis-ci.org/Profiscience/ko-projections)
 [![CodeClimate](https://img.shields.io/codeclimate/github/Profiscience/ko-projections.svg)](https://codeclimate.com/github/Profiscience/ko-projections)
-[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/Profiscience/ko-projections.svg)](https://codeclimate.com/repos/5722f999db67c30068003d60/coverage)
+[![Test Coverage](https://codeclimate.com/repos/5722f999db67c30068003d60/badges/feedbd14a4dfe9b26554/coverage.svg)](https://codeclimate.com/repos/5722f999db67c30068003d60/coverage)
 
 #### Usage
 
