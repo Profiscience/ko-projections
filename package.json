@@ -4,8 +4,8 @@
   "description": "Observable Lodash Chains for KnockoutJS",
   "main": "dist/ko-projections.js",
   "scripts": {
-    "build": "babel src -d lib && webpack && uglifyjs dist/ko-projections.js -o dist/ko-projections.min.js",
-    "watch": "babel src -wd lib && webpack --watch",
+    "build": "webpack && uglifyjs dist/ko-projections.js -o dist/ko-projections.min.js",
+    "watch": "webpack --watch",
     "prepublish": "npm run build && npm run example:build",
     "stage-dist": "git add dist",
     "test": "karma start karma.travis.js",
