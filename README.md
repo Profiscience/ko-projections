@@ -1,10 +1,10 @@
 # ko-projections
 
-![NPM](https://img.shields.io/npm/v/ko-component-router.svg)
-![WTFPL](https://img.shields.io/npm/l/ko-component-router.svg)
-[![Travis](https://img.shields.io/travis/Profiscience/ko-component-router.svg)](https://travis-ci.org/Profiscience/ko-component-router)
-[![CodeClimate](https://img.shields.io/codeclimate/github/Profiscience/ko-component-router.svg)](https://codeclimate.com/github/Profiscience/ko-component-router)
-[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/Profiscience/ko-component-router.svg)](https://codeclimate.com/github/Profiscience/ko-component-router/coverage)
+![NPM](https://img.shields.io/npm/v/ko-projections.svg)
+![WTFPL](https://img.shields.io/npm/l/ko-projections.svg)
+[![Travis](https://img.shields.io/travis/Profiscience/ko-projections.svg)](https://travis-ci.org/Profiscience/ko-projections)
+[![CodeClimate](https://img.shields.io/codeclimate/github/Profiscience/ko-projections.svg)](https://codeclimate.com/github/Profiscience/ko-projections)
+[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/Profiscience/ko-projections.svg)](https://codeclimate.com/github/Profiscience/ko-projections/coverage)
 
 #### Usage
 
