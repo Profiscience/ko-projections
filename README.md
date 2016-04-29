@@ -3,7 +3,7 @@
 ![NPM](https://img.shields.io/npm/v/ko-projections.svg)
 ![WTFPL](https://img.shields.io/npm/l/ko-projections.svg)
 [![Travis](https://img.shields.io/travis/Profiscience/ko-projections.svg)](https://travis-ci.org/Profiscience/ko-projections)
-[![CodeClimate](https://img.shields.io/codeclimate/github/Profiscience/ko-projections.svg)](https://codeclimate.com/github/Profiscience/ko-projections)
+[![Code Climate](https://codeclimate.com/repos/5722f999db67c30068003d60/badges/feedbd14a4dfe9b26554/gpa.svg)](https://codeclimate.com/repos/5722f999db67c30068003d60/feed)
 [![Test Coverage](https://codeclimate.com/repos/5722f999db67c30068003d60/badges/feedbd14a4dfe9b26554/coverage.svg)](https://codeclimate.com/repos/5722f999db67c30068003d60/coverage)
 
 #### Usage
