@@ -1,10 +1,12 @@
 # ko-projections
 
-![NPM](https://img.shields.io/npm/v/ko-projections.svg)
+[![NPM](https://img.shields.io/npm/v/ko-projections.svg)](https://www.npmjs.com/package/ko-projections)
 ![WTFPL](https://img.shields.io/npm/l/ko-projections.svg)
 [![Travis](https://img.shields.io/travis/Profiscience/ko-projections.svg)](https://travis-ci.org/Profiscience/ko-projections)
-[![Code Climate](https://codeclimate.com/repos/5722f999db67c30068003d60/badges/feedbd14a4dfe9b26554/gpa.svg)](https://codeclimate.com/repos/5722f999db67c30068003d60/feed)
-[![Test Coverage](https://codeclimate.com/repos/5722f999db67c30068003d60/badges/feedbd14a4dfe9b26554/coverage.svg)](https://codeclimate.com/repos/5722f999db67c30068003d60/coverage)
+[![Coveralls](https://img.shields.io/coveralls/Profiscience/ko-projections.svg?maxAge=2592000)](https://coveralls.io/github/Profiscience/ko-projections)
+[![Dependency Status](https://img.shields.io/david/Profiscience/ko-projections.svg)](https://david-dm.org/Profiscience/ko-projections)
+[![Peer Dependency Status](https://img.shields.io/david/peer/Profiscience/ko-projections.svg?maxAge=2592000)](https://david-dm.org/Profiscience/ko-projections#info=peerDependencies&view=table)
+[![NPM Downloads](https://img.shields.io/npm/dt/ko-projections.svg?maxAge=2592000)](http://npm-stat.com/charts.html?package=ko-projections&author=&from=&to=)
 
 #### Usage
 
