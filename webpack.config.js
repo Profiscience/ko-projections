@@ -30,6 +30,12 @@ module.exports = {
       commonjs: 'knockout',
       commonjs2: 'knockout',
       amd: 'knockout'
+    },
+    'lodash': {
+      root: '_',
+      commonjs: 'lodash',
+      commonjs2: 'lodash',
+      amd: 'lodash'
     }
   }
 }
