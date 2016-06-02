@@ -5,7 +5,7 @@ const test = require('tape')
 
 require('./src')
 
-test('extenders/kodash basic functionality', (t) => {
+test('extenders/ko-projections basic functionality', (t) => {
   t.plan(3)
 
   const foos = ko.observableArray([
@@ -37,12 +37,12 @@ test('extenders/kodash basic functionality', (t) => {
     { id: 2, text: 'rab' },
     { id: 3, text: 'zab' },
     { id: 4, text: 'xuq' }
-  ], 'calls kodash prototype func')
+  ], 'calls ko-projections prototype func')
 
   t.end()
 })
 
-test('extenders/kodash chainability', (t) => {
+test('extenders/ko-projections chainability', (t) => {
   t.plan(2)
 
   const foos = ko.observableArray([
@@ -75,7 +75,31 @@ test('extenders/kodash chainability', (t) => {
   t.end()
 })
 
-test('extenders/kodash works w/ dependency chain', (t) => {
+test('extenders/ko-projections non-chainable functions', (t) => {
+  t.plan(5)
+
+  const foos = ko.observableArray([
+    { id: 1, text: 'foo' },
+    { id: 2, text: 'bar' },
+    { id: 3, text: 'baz' },
+    { id: 4, text: 'qux' }
+  ]).extend({
+    _: true
+  })
+
+  let isLazy = true
+  const fooFunc = foos
+    ._.each(() => {
+      isLazy = false
+      t.ok(true)
+    })
+
+  t.assert(isLazy)
+  fooFunc()
+  t.end()
+})
+
+test('extenders/ko-projections works w/ dependency chain', (t) => {
   t.plan(3)
 
   const foos = ko.observableArray([
@@ -121,7 +145,7 @@ test('extenders/kodash works w/ dependency chain', (t) => {
 
 // Haven't decided yet if this is worth implementing...
 //
-// test('extenders/kodash can selectively extend', (t) => {
+// test('extenders/ko-projections can selectively extend', (t) => {
 //   t.plan(2)
 //
 //   const foos = ko.observableArray([

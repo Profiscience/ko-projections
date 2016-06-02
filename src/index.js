@@ -7,7 +7,7 @@ function KodashWrapper(obs) {
   this.obs = obs
 }
 
-KodashWrapper.prototype.wrapProtoFn = function(protoFn) {
+KodashWrapper.prototype.wrapProtoFn = (protoFn) => {
   return function() {
     const protoFnArgs = []
     for (let i = 0; i < arguments.length; ++i) {
@@ -15,7 +15,10 @@ KodashWrapper.prototype.wrapProtoFn = function(protoFn) {
     }
 
     return ko.pureComputed(() => {
-      return protoFn.bind(_(this.obs()))(...protoFnArgs).value()
+      const wrapped = protoFn.bind(_(this.obs()))(...protoFnArgs)
+      return typeof wrapped.value === 'function'
+        ? wrapped.value()
+        : wrapped
     }).extend({
       _: true
     })

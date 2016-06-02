@@ -73,7 +73,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    return ko.pureComputed(function () {
-	      return protoFn.bind(_(_this.obs())).apply(undefined, protoFnArgs).value();
+	      var wrapped = protoFn.bind(_(_this.obs())).apply(undefined, protoFnArgs);
+	      return typeof wrapped.value === 'function' ? wrapped.value() : wrapped;
 	    }).extend({
 	      _: true
 	    });
