@@ -8,7 +8,7 @@
     "watch": "webpack --watch",
     "prepublish": "npm run build",
     "stage-dist": "git add dist",
-    "test": "export NODE_ENV=test; nyc --reporter=lcov --reporter=html ava --verbose --serial",
+    "test": "export NODE_ENV=test; nyc --reporter=lcov --reporter=html ava --verbose",
     "test:watch": "ava --watch"
   },
   "precommit": [
