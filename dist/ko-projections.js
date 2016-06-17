@@ -74,7 +74,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    return ko.pureComputed(function () {
 	      var wrapped = protoFn.bind(_(_this.obs())).apply(undefined, protoFnArgs);
-	      return typeof wrapped.value === 'function' ? wrapped.value() : wrapped;
+	      return wrapped && typeof wrapped.value === 'function' ? wrapped.value() : wrapped;
 	    }).extend({
 	      _: true
 	    });

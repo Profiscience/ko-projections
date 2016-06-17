@@ -16,7 +16,7 @@ KodashWrapper.prototype.wrapProtoFn = (protoFn) => {
 
     return ko.pureComputed(() => {
       const wrapped = protoFn.bind(_(this.obs()))(...protoFnArgs)
-      return typeof wrapped.value === 'function'
+      return wrapped && typeof wrapped.value === 'function'
         ? wrapped.value()
         : wrapped
     }).extend({
