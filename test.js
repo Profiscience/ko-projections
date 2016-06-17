@@ -1,6 +1,8 @@
-import ko from 'knockout'
-import test from 'ava'
-import './src'
+'use strict'
+
+const ko = require('knockout')
+const test = require('ava')
+require('./src')
 
 test('extenders/ko-projections basic functionality', (t) => {
   t.plan(3)

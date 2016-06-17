@@ -6,13 +6,19 @@
   "scripts": {
     "build": "webpack && uglifyjs dist/ko-projections.js -o dist/ko-projections.min.js",
     "watch": "webpack --watch",
+    "lint": "eslint src --max-warnings=0",
+    "format": "eslint src --fix",
     "prepublish": "npm run build",
     "stage-dist": "git add dist",
     "test": "export NODE_ENV=test; nyc --reporter=lcov --reporter=html ava --verbose",
     "test:watch": "ava --watch"
   },
   "precommit": [
-    "build",
+    [
+      "lint",
+      "test",
+      "build"
+    ],
     "stage-dist"
   ],
   "repository": {
@@ -43,7 +49,7 @@
     "knockout": "^3.4.0",
     "lodash": "^4.11.1",
     "nyc": "^6.6.1",
-    "pre-commit": "^1.1.2",
+    "pre-commit": "caseyWebb/pre-commit",
     "tape": "^4.4.0",
     "uglify-js": "^2.4.24",
     "webpack": "^1.11.0"
