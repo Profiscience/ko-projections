@@ -1,41 +1,56 @@
 'use strict'
 
-module.exports = {
-  entry: './src/index.js',
+const webpack = require('webpack')
 
-  output: {
-    path: 'dist',
-    filename: 'ko-projections.js',
-    library:  'ko-projections',
-    libraryTarget: 'umd'
-  },
+function makeConfig(minify) {
+  return {
+    entry: './src/index.js',
 
-  module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        loader: 'babel',
-        query: {
-          cacheDirectory: true,
-          presets: ['es2015']
-        }
-      }
-    ]
-  },
-
-  externals: {
-    'knockout': {
-      root: 'ko',
-      commonjs: 'knockout',
-      commonjs2: 'knockout',
-      amd: 'knockout'
+    output: {
+      path: 'dist',
+      filename: minify
+        ? 'ko-projections.min.js'
+        : 'ko-projections.js',
+      library:  'ko-projections',
+      libraryTarget: 'umd'
     },
-    'lodash': {
-      root: '_',
-      commonjs: 'lodash',
-      commonjs2: 'lodash',
-      amd: 'lodash'
-    }
+
+    module: {
+      loaders: [
+        {
+          test: /\.js$/,
+          exclude: /(node_modules)/,
+          loader: 'babel',
+          query: {
+            cacheDirectory: true,
+            presets: ['es2015']
+          }
+        }
+      ]
+    },
+
+    externals: {
+      'knockout': {
+        root: 'ko',
+        commonjs: 'knockout',
+        commonjs2: 'knockout',
+        amd: 'knockout'
+      },
+      'lodash': {
+        root: '_',
+        commonjs: 'lodash',
+        commonjs2: 'lodash',
+        amd: 'lodash'
+      }
+    },
+
+    plugins: minify
+      ? [new webpack.optimize.UglifyJsPlugin()]
+      : []
   }
 }
+
+module.exports = [
+  makeConfig(),
+  makeConfig(true)
+]
