@@ -47,7 +47,7 @@
     "eslint-config-profiscience": "^1.0.1",
     "knockout": "^3.4.0",
     "lodash": "^4.11.1",
-    "nyc": "^8.3.2",
+    "nyc": "^10.0.0",
     "pre-commit": "caseyWebb/pre-commit",
     "webpack": "^1.11.0"
   },
