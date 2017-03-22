@@ -49,7 +49,7 @@
     "lodash": "^4.11.1",
     "nyc": "^10.0.0",
     "pre-commit": "caseyWebb/pre-commit",
-    "webpack": "^1.11.0"
+    "webpack": "^2.3.0"
   },
   "peerDependencies": {
     "knockout": "^3.3.0",
