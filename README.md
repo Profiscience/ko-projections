@@ -1,5 +1,7 @@
 # ko-projections
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Profiscience/ko-projections.svg)](https://greenkeeper.io/)
+
 [![NPM](https://img.shields.io/npm/v/ko-projections.svg)](https://www.npmjs.com/package/ko-projections)
 ![WTFPL](https://img.shields.io/npm/l/ko-projections.svg)
 [![Travis](https://img.shields.io/travis/Profiscience/ko-projections.svg)](https://travis-ci.org/Profiscience/ko-projections)
