@@ -9,6 +9,22 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/Profiscience/ko-projections.svg)](https://greenkeeper.io/)
 [![NPM Downloads](https://img.shields.io/npm/dt/ko-projections.svg?maxAge=2592000)](http://npm-stat.com/charts.html?package=ko-projections&author=&from=&to=)
 
+> NOTICE: This repo is deprecated. Prefer the following pattern.
+>
+> ```typescript
+> import { flow } from 'lodash'
+> import { map, filter } from 'lodash/fp'
+> import ko from 'knockout'
+>
+> const flippedAndFilteredFoos = ko.pureComputed(() => flow(
+>   map((foo) => {
+>     foo.text = foo.text.split('').reverse().join('')
+>     return foo
+>   }),
+>   filter((foo) => foo.id % 2 === (wantsOdds() ? 1 : 0))
+> )(foos))
+> ```
+
 #### Usage
 
 ```javascript
